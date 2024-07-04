@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.house {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.house img{
+    width: 280px;
+}
+.house span{
+    color: aqua;
+}
+.about-us{
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.about-us p{
+   font-size: xx-large;
+   font-weight: 600;
+}
+.project-list{
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.project-list span{
+    color: red;
+}
+.contact-us{
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.toggle-button {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .toggle-button {
+        display: block;
+    }
+}
+
+.section {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">My Personal Portfolio</div>
+            <a href="javascript:void(0);" class="toggle-button" id="navbar-toggle">
+                &#9776;
+            </a>
+            <div class="navbar-links" id="navbar-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="house">
+        <h1>Welcome to My Portfolio</h1>
+        <img src="cropped_image.png" alt="">
+        <h1>My name is <span> Rudransh Dwivedi</span></h1>
+        <h3>and I am a Web Developer</h3>
+    </section>
+    <section id="about" class="about-me">
+        <h2>About Me</h2>
+        <p> <pre> Hello! I'm Rudransh Dwivedi, a passionate web developer with over [1 year] of experience in creating dynamic, user-friendly websites and applications. My journey in web development started with a curiosity for technology and a desire to bring ideas to life on the web.
+
+            My Expertise
+            I specialize in front-end development with a strong focus on crafting seamless user experiences. My technical skill set includes:
+            
+            HTML & CSS: Building the structure and style of web pages to create visually appealing and responsive designs.
+            JavaScript: Enhancing interactivity and functionality, ensuring websites are both engaging and efficient.
+            Frameworks & Libraries: Utilizing tools like React, Angular, and Vue.js to build robust and scalable applications.
+            Backend Development: Working with Node.js, Express, and databases like MongoDB and MySQL to develop full-stack solutions.
+            Version Control: Managing code with Git and collaborating effectively using platforms like GitHub and Bitbucket.
+            My Approach
+            I believe in writing clean, maintainable code and staying updated with the latest industry trends and best practices. I strive to understand client needs deeply and work closely with them to deliver solutions that exceed expectations.</pre></p>
+    </section>
+    <section id="projects" class="project-list"></section>
+        <h2>Projects</h2>
+        <h4>Project-1</h4>
+        <p>This is my first project in this i have created a <span>Netflix Clone</span>using HTML and CSS <pre> <b> <big>Netflix Clone Project</big> 
+            Overview
+            The Netflix Clone is a web application developed to mimic the core functionalities and user experience of Netflix.This project demonstrates my skills in front-end and back-end development,showcasing my ability to create a full-stack application that provides a seamless and engaging user experience.
+            
+            Features
+            User Authentication: Secure user registration and login system using JWT (JSON Web Tokens) for session management.
+            Responsive Design: Adaptive user interface that works seamlessly on various devices, including desktops, tablets, and mobile phones.
+            Movie Browsing: A dynamic catalog of movies and TV shows fetched from an API, allowing users to browse through different genres.
+            Search Functionality: An efficient search feature that lets users quickly find movies or TV shows by title.
+            Movie Details: Detailed view for each movie or TV show, including a synopsis, rating, and related media.
+            Video Playback: Integrated video player for streaming trailers or selected content.
+        
+         <big>Development Process</big>  
+            Planning & Design: Outlined the application structure and created wireframes for key pages.
+            Front-End Development: Built the React components, integrated with Redux for state management, and applied CSS for styling.
+            Back-End Development: Set up the server using Node.js and Express, developed the API endpoints, and configured MongoDB for data storage.
+            Integration & Testing: Connected the front-end to the back-end, tested the application for bugs, and ensured all features worked as intended.
+            Deployment: Deployed the application on [Heroku/Vercel/Netlify] for public access.
+         <big>Challenges & Learning</big>   
+            Developing the Netflix Clone provided valuable insights into full-stack development, especially in managing state with Redux and handling asynchronous data fetching. I also honed my skills in user authentication and improved my understanding of integrating front-end and back-end technologies.
+            
+        <big>Conclusion</big>    
+            The Netflix Clone project is a testament to my ability to develop a complex web application from scratch, demonstrating proficiency in both front-end and back-end development. Feel free to explore the code on GitHub [link to Repository:- <a href=" https://github.com/Rudransh2024/Netflix-clone-">github</a>].
+            
+            
+        </pre> </p>
+    </section>
+    <section id="contact" class="contact-us">
+        <h2>Contact</h2>
+        <p><a href="rudranshdwivedi20@gmail.com">Email</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
